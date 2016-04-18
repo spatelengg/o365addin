@@ -1,0 +1,949 @@
+/* Reset HTML5
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	font-family: "segoeuiSemilight", Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+html {
+	min-height: 100%;
+}
+
+
+
+/* common style */
+body {
+	background: #fff;
+	min-width: 300px;
+}
+input,
+button {
+	border-radius: 0;
+}
+a,
+a:focus {
+	text-decoration: none;
+	outline: none;
+}
+	a:hover {
+		text-decoration: underline;
+	}
+.icons {
+	background: url(../i/icon-sprites.png) no-repeat;
+	display: inline-block;
+}
+
+
+.hide {
+	display: none;
+}
+
+.clearfix:after{
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden
+}
+
+
+
+/* .btn */
+.btn {
+	font-family: Arial, Helvetica, sans-serif;
+	display: inline-block;
+	width: 84px;
+	height: 30px;
+	border-radius: 10px;
+	background-color: #5d5d5d;
+	font-size: 11.69px;
+	line-height: 30px;
+	color: #fff;
+	text-align: center;
+}
+
+.btn.btn-copy-to-clipboard{
+	width: 90px;
+	font-size: 9px;
+}
+	.btn:hover {
+		text-decoration: none;
+		background-color: #706f6f;
+	}
+
+/* Division and Language Selection */
+.john-hancock-contents .btn-save,
+.john-hancock-contents .btn-copy-to-clipboard,
+.john-hancock-contents .btn-next {
+	background-color: #557c9a;
+}
+	.john-hancock-contents .btn-save:hover,
+	.john-hancock-contents .btn-copy-to-clipboard:hover,
+	.john-hancock-contents .btn-next:hover {
+		background-color: #608bad;
+	}
+.signator-contents .btn-save,
+.signator-contents .btn-copy-to-clipboard,
+.signator-contents .btn-next {
+	background-color: #0084a9;
+}
+	.signator-contents .btn-save:hover,
+	.signator-contents .btn-copy-to-clipboard:hover,
+	.signator-contents .btn-next:hover {
+		background-color: #0094be;
+	}
+.manulife-contents .btn-save,
+.manulife-contents .btn-copy-to-clipboard,
+.manulife-contents .btn-next {
+	background-color: #4e801f;
+}
+	.manulife-contents .btn-save:hover,
+	.manulife-contents .btn-copy-to-clipboard:hover,
+	.manulife-contents .btn-next:hover {
+		background-color: #5a9324;
+	}
+
+
+
+/* .header */
+.header {
+	background-color: #454545;
+	font-size: 11.69px;
+	color: #fff;
+}
+	.header.header-john-hancock {
+		background-color: #32506a;
+	}
+	.header.header-signator {
+		background-color: #00245d;
+	}
+	.header.header-manulife {
+		background-color: #00673e;
+	}	
+	/* .header .btn-group */
+	.header .btn-group {
+		min-height: 34px;
+		line-height: 13px;
+	}
+		.header .btn-group a {
+			color: #fff;
+			text-decoration: none;
+			padding-top: 10px;
+			position: relative;
+		}
+			.header .btn-group a .icons {
+				width: 16px;
+				height: 16px;
+				position: absolute;
+				top: 8px;
+				left: 0;
+			}
+		.header .btn-group .btn-add-ins {
+			float: left;
+			padding-left: 18px;
+			margin-left: 9px;
+		}
+		.header .btn-group .btn-add-ins:hover {
+			text-decoration: underline;
+		}
+			.header .btn-group .btn-add-ins .icons {
+				background-position: 0 0;
+			}
+		.header .btn-group .btn-close {
+			float: right;
+			padding-left: 20px;
+			margin-right: 13px;	
+		}
+		.header .btn-group .btn-close:hover {
+			text-decoration: underline;
+		}
+			.header .btn-group .btn-close .icons {
+				background-position: -16px 0;
+			}
+	/* .header .logo-area */
+	.header .logo-area {
+		min-height: 85px;
+		font-size: 17.37px;
+	}
+		.header.header-john-hancock .logo-area img {
+			width: 128px;
+			height: 42px;
+			margin-top: 18px;
+			margin-left: 13px;
+		}
+		.header.header-signator .logo-area img {
+			width: 120px;
+			height: 34px;
+			margin-top: 24px;
+			margin-left: 15px;
+		}
+		.header.header-manulife .logo-area img {
+			width: 173px;
+			height: 47px;
+			margin-top: 14px;
+			margin-left: -1px;
+		}
+		.header .logo-area span {
+			float: right;
+			letter-spacing: -0.5px;
+            min-width:300px;
+            text-align:center;
+		}
+	
+
+
+
+/* .contents */
+.contents {
+	margin-left: 14px;
+	margin-right: 15px;
+}
+
+
+	/* .home-contents */
+	.contents.home-contents {
+		margin-right: 19px;
+	}
+		.home-contents .welcome {
+			font-size: 13.74px;
+			color: #454545;
+			letter-spacing: -0.4px;
+			line-height: 18.32px;
+			margin-top: 23px;
+			margin-bottom: 21px;
+		}
+		.home-contents .section {
+			display: block;
+			height: 75px;
+			margin-bottom: 16px;
+			position: relative;
+		}
+		.home-contents .section.section-john-hancock {
+			height: 73px;
+			margin-bottom: 17px;
+			margin-right: 1px;
+			background-color: #32506a;
+            text-align: center;
+		}
+			.home-contents .section.section-john-hancock img {
+				width: 121px;
+				height: 40px;
+				margin-top: 17px;
+			}
+		.home-contents .section.section-signator {
+			height: 74px;
+			background-color: #00245d;
+            text-align: center;
+		}
+			.home-contents .section.section-signator img {
+				width: 103px;
+				height: 29px;
+				margin-top: 23px;
+				
+			}
+		.home-contents .section.section-manulife {
+			height: 74px;
+			background-color: #00673e;
+            text-align: center;
+		}
+			.home-contents .section.section-manulife img {
+				width: 133px;
+				height: 37px;
+				margin-top: 19px;
+				
+
+			}	
+		.home-contents .section span {
+			color: #fff;
+			font-size: 14.58px;
+			letter-spacing: -0.6px;
+			position: absolute;
+			left: 158px;
+			top: 28px;
+		}
+		.home-contents .get-more {
+			border-top: 1px solid #ebebeb;
+			margin-top: 26px;
+			padding-top: 10px;
+			padding-left: 2px;
+			margin-right: -19px;
+		}
+			.home-contents .get-more a {
+				font-family: "segoeui", Arial;
+				font-size: 12.49px;
+				line-height: 18.32px;
+				color: #454545;
+			}
+			
+
+	/* .chosen-section */
+	.contents .chosen-area.chosen-division {
+		margin-top: 19px;
+	}
+    .contents .chosen-area.chosen-businessunit {
+		margin-top: 19px;
+	}
+	.contents .chosen-area.chosen-language {
+		margin-top: 28px;
+		margin-bottom: 32px;
+	}
+		.contents .chosen-area p {
+			font-size: 13.76px;
+			line-height: 18.35px;
+			color: #454545;
+			margin-bottom: 6px;
+		}
+		.contents .chosen-area.chosen-language p {
+			margin-bottom: 7px;
+		}
+		.contents .chosen-area .chosen-content {
+			width: 100%;
+			position: relative;
+		}
+		.contents .chosen-area .chosen {
+			display: block;
+			height: 28px;
+			border: 1px solid #d6d6d6;
+			border-radius: 1px;
+			position: relative;
+			text-decoration: none;
+		}
+		.contents .chosen-area .chosen.disable {
+			cursor: default;
+			border: 1px solid #e6e6e6;
+		}
+			.contents .chosen-area .chosen.disable span {
+				color: #dfdfdf;
+			}
+			.contents .chosen-area .chosen.disable .icons {
+				opacity: 0.3;
+			}
+		.contents .chosen-area.chosen-language .chosen {
+			height: 28px;
+		}
+			.contents .chosen-area .chosen span {
+				font-family: Arial, Helvetica, sans-serif;
+				display: inline-block;
+				font-size: 12.51px;
+				line-height: 16px;
+				color: #bdbdbd;
+				padding-top: 6px;
+				height: 22px;
+				padding-left: 11px;
+			}
+			.contents .chosen-area .chosen .icons {
+				width: 16px;
+				height: 16px;
+				background-position: -176px 0;
+				position: absolute;
+				top: 6px;
+				right: 4px;
+			}
+		.contents .chosen-area .chosen-menus {
+			width: 100%;
+			position: absolute;
+			z-index: 99;
+		}
+			.contents .chosen-area .chosen-menus li {
+				border: 1px solid #d6d6d6;
+				border-top: none;
+			}
+			.contents .chosen-area .chosen-menus li a {
+				font-family: Arial, Helvetica, sans-serif;
+				display: block;
+				font-size: 12.49px;
+				line-height: 16px;
+				color: #9d9d9d;
+				text-decoration: none;
+				background-color: #f9f9f9;
+				padding: 5px 0 6px 10px;
+			}
+				.contents .chosen-area .chosen-menus li a:hover {
+					background-color: #eceaea;
+				}
+
+
+	/* .setting-section */
+	.contents .top-area {
+		min-height: 44px;
+		border-bottom: 1px solid #ebebeb;
+		margin-right: -15px;
+	}
+		.contents .top-area .copy {
+			font-family: "segoeui", Arial;
+			font-size: 12.51px;
+			line-height: 18.34px;
+			padding-top: 13px;
+			margin-left: -4px;
+			float: left;
+		}
+		.contents.john-hancock-contents .client-section .top-area .copy {
+			color: #80705a;
+		}
+		.contents.john-hancock-contents .top-area .copy {
+			color: #454545;
+		}
+		.contents.signator-contents .top-area .copy {
+			color: #f58025;
+		}
+		.contents.manulife-contents .top-area .copy {
+			color: #4e801f;
+		}
+		.contents .top-area .btn-setting {
+			font-family: "segoeui", Arial;
+			font-size: 12.51px;
+			line-height: 18.34px;
+			color: #c2c1c3;
+			padding-top: 13px;
+			padding-right: 34px;
+			float: right;
+			margin-right: 5px;
+			position: relative;
+		}
+			.contents .top-area .btn-setting .icons {
+				width: 32px;
+				height: 32px;
+				background-position: 0 -16px;
+				position: absolute;
+				top: 7px;
+				right: 0;
+			}
+		.contents .setting-section .check-area {
+			padding-top: 9px;
+			padding-bottom: 17px;
+		}
+		.contents .setting-section .check-area .form-container label {
+			display: block;
+			padding-top: 2px;
+		}
+		/* .setting-section .main-area */
+		.contents .setting-section .main-area {
+			margin-left: -4px;
+			margin-right: -5px;
+			padding-bottom: 16px;
+			min-height: 440px;
+		}
+			.contents .setting-section .main-area .module {
+				min-height: 39px;
+			}
+			.contents .setting-section .main-area .module .module-title {
+				min-height: 30px;
+			}
+			.contents .setting-section .main-area .module.active .module-title {
+				min-height: 30px;
+				background-color: #e6e7e8;
+			}
+			.contents .setting-section .main-area .module .module-title .btn-toggle {
+				font-family: "segoeui", Arial;
+				float: left;
+				padding-left: 30px;
+				position: relative;
+				font-size: 11.67px;
+				line-height: 30px;
+				color: #454545;
+				text-decoration: none;
+			}
+				.contents .setting-section .main-area .module .module-title .btn-toggle .icons {
+					width: 16px;
+					height: 16px;
+					background-position: -192px 0;
+					position: absolute;
+					left: 9px;
+					top: 7px;
+				}
+				.contents .setting-section .main-area .module.active .module-title .btn-toggle .icons {
+					left: 8px;
+					top: 8px;
+				}
+				.contents.john-hancock-contents .setting-section .main-area .module.active .module-title .btn-toggle .icons {
+					background-position: -32px 0;
+				}
+				.contents.signator-contents .setting-section .main-area .module.active .module-title .btn-toggle .icons {
+					background-position: -48px 0;
+				}
+				.contents.manulife-contents .setting-section .main-area .module.active .module-title .btn-toggle .icons {
+					background-position: -64px 0;
+				}
+			.contents .setting-section .main-area .module .module-title .btn-clear {
+				font-family: Arial, Helvetica, sans-serif;
+				float: right;
+				padding-right: 13px;
+				font-size: 10.42px;
+				line-height: 30px;
+				color: #595959;
+				display: none;
+			} 
+			.contents .setting-section .main-area .module.active .module-title .btn-clear {
+				display: inline-block;
+			}
+			.contents .setting-section .main-area .module .module-title .over-flag {
+				display: none;
+				width: 16px;
+				height: 16px;
+				border: 2px solid #325068;
+				border-radius: 50%;
+				margin-top: 5px;
+				float: right;
+			}
+			.contents .setting-section .main-area .module.over .module-title .over-flag {
+				display: inline-block;
+			}
+				.contents .setting-section .main-area .module .module-title .over-flag .icons {
+					width: 16px;
+					height: 16px;
+					background-position: -160px 1px;
+				}
+			.contents .setting-section .main-area .module .module-info,
+			.contents .setting-section .main-area .module.over .module-info {
+				display: none;
+			}
+			.contents .setting-section .main-area .module.active .module-info {
+				display: block;
+			}
+			/* .module.module-personal */
+			.contents .setting-section .main-area .module.active {
+				margin-top: 10px;
+				margin-bottom: 20px;
+			}
+			.contents .setting-section .main-area .module.module-personal.active {
+				margin-top: 0;
+			}
+			.contents .setting-section .main-area .module.module-social.active {
+				margin-top: 11px;
+			}
+			.contents .setting-section .main-area .module.module-logo.active {
+				margin-top: 12px;
+			}
+			.contents .setting-section .main-area .module.module-personal .module-info {
+				padding: 13px 12px 12px 11px;
+				border: 1px solid #ddd;
+			}
+				.contents .setting-section .main-area .module.module-personal .module-info .lefts {
+					width: 50%;
+					float: left;
+				}
+				.contents .setting-section .main-area .module.module-personal .module-info .rights {
+					width: 50%;
+					float: right;
+				}
+				.contents .setting-section .main-area .module.module-personal .module-info .lefts .input-wrap {
+					margin-right: 9px;
+				}
+				.contents .setting-section .main-area .module.module-personal .module-info .rights .input-wrap {
+					margin-left: 8px;
+				}
+				.contents .setting-section .main-area .module .module-info .input-wrap {
+					height: 28px;
+					border: 1px solid #d6d6d6;
+					padding: 0 9px;
+					margin-bottom: 10px;
+					border-radius: 1px;
+				}
+					.contents .setting-section .main-area .module .module-info .input-wrap input {
+						font-family: Arial, Helvetica, sans-serif;
+						font-size: 10.45px;
+						color: #808080;
+						width: 100%;
+						height: 26px;
+						vertical-align: middle;
+						border: none;
+						outline: none;
+						margin: 0;
+					}
+						.contents .setting-section .main-area .module .module-info .input-wrap input::-webkit-input-placeholder {
+							color: #bdbdbd;
+						}
+						.contents .setting-section .main-area .module .module-info .input-wrap input:-moz-placeholder {
+							color: #bdbdbd;
+						}
+						.contents .setting-section .main-area .module .module-info .input-wrap input::-moz-placeholder {
+							color: #bdbdbd;
+							opacity: 1;
+						}
+						.contents .setting-section .main-area .module .module-info .input-wrap input:-ms-input-placeholder {
+							color: #bdbdbd;
+						}
+			/* .module.module-office-address */
+			.contents .setting-section .main-area .module.module-office-address.active {
+				margin-left: 3px;
+				margin-right: -3px;
+			}
+			.contents .setting-section .main-area .module.module-office-address .module-info {
+				padding: 13px 12px 6px 11px;
+				border: 1px solid #ddd;
+			}
+			/* .module.module-social */
+			.contents .setting-section .main-area .module-social .module-info {
+				padding: 13px 12px 11px 8px;
+				border: 1px solid #ddd;
+			}
+				.contents .setting-section .main-area .module-social .module-info .row {
+					min-height: 30px;
+					margin-bottom: 10px;
+				}
+				.contents .setting-section .main-area .module-social .module-info .row .lefts {
+					padding-top: 4px;
+					float: left;
+				}
+				.contents .setting-section .main-area .module-social .module-info .row .rights {
+					margin-left: 137px;
+				}
+				.contents .setting-section .main-area .module-social .chosen span {
+					font-size: 10.43px;
+					padding-top: 6px;
+					padding-left: 9px;
+				}
+				.contents .setting-section .main-area .module-social .chosen .icons {
+					top: 5px;
+					right: 6px;
+				}
+			/* .module.module-exec */
+			.contents .setting-section .main-area .module.module-exec.active {
+				margin-left: 3px;
+				margin-right: -3px;
+			}
+			.contents .setting-section .main-area .module.module-exec .module-info {
+				padding: 13px 12px 6px 11px;
+				border: 1px solid #ddd;
+			}
+			/* .module.module-logo */
+			.contents .setting-section .main-area .module.module-logo .module-info {
+				padding: 19px 12px 38px 11px;
+				border: 1px solid #ddd;
+			}
+			.contents .setting-section .main-area .module.module-logo .module-info .row {
+				height: 43px;
+			}
+				.contents .setting-section .main-area .module.module-logo .module-info .row {
+					height: 43px;
+					position: relative;
+				}
+				.contents .setting-section .main-area .module-logo .row img {
+					max-width: 235px;
+					max-height: 43px;
+					position: absolute;
+					top: -6px;
+					left: 25px;
+				}
+				
+				.contents .setting-section .main-area .module-logo .row.logo-manulife span.jqTransformRadioWrapper {
+					margin-top: -1px;
+				}
+				
+		.contents .setting-section .btn-area {
+			margin-left: -4px;
+			margin-right: -5px;
+		}
+        .contents .setting-section .msg-area {
+			color: #B22222;
+            margin-bottom: 10px;
+		}
+
+
+	/* .client-section */	
+	.contents .client-section .module-title {
+		min-height: 30px;
+		margin-bottom: 9px;
+	}
+	.contents .client-section .module-title .btn-toggle {
+		font-family: "segoeui", Arial;
+		float: left;
+		padding-left: 30px;
+		position: relative;
+		font-size: 11.69px;
+		line-height: 30px;
+		color: #454545;
+		text-decoration: none;
+	}
+		.contents .client-section .module-title .btn-toggle .icons {
+			width: 16px;
+			height: 16px;
+			background-position: -192px 0;
+			position: absolute;
+			left: 9px;
+			top: 7px;
+		}
+		.contents .client-section .module.active .module-title .btn-toggle .icons {
+			left: 8px;
+			top: 8px;
+		}
+		.contents.john-hancock-contents .client-section .module.active .module-title .btn-toggle .icons {
+			background-position: -32px 0;
+		}
+		.contents.signator-contents .client-section .module.active .module-title .btn-toggle .icons {
+			background-position: -48px 0;
+		}
+		.contents.manulife-contents .client-section .module.active .module-title .btn-toggle .icons {
+			background-position: -64px 0;
+		}
+			.contents .client-section .module-title .over-flag {
+				width: 16px;
+				height: 16px;
+				border: 2px solid #cbcacb;
+				border-radius: 50%;
+				margin-top: 5px;
+				float: right;
+			}
+			.contents .client-section .module.active .module-title .over-flag {
+				border: 2px solid #325068;
+			}
+				.contents .client-section .module.active .module-title .over-flag .icons {
+					width: 16px;
+					height: 16px;
+					background-position: -160px 1px;
+				}		
+		.contents .client-section .main-area {
+			margin-left: -4px;
+			margin-right: -7px;
+			padding-top: 19px;
+			padding-bottom: 16px;
+			min-height: 460px;
+		}
+		.contents .client-section .to-do {
+			margin-top: 13px;
+		}
+		.contents .client-section .to-do.no-margin-bottom {
+			margin-bottom: 16px;
+		}
+			.contents .client-section .to-do .todo-title {
+				font-size: 12.53px;
+				font-weight: normal;
+				height: 30px;
+				line-height: 30px;
+				color: #454545;
+				background-color: #e6e7e8;
+				padding-left: 10px;
+			}
+			.contents .client-section .to-do .todo-context {
+				border: 1px solid #ddd;
+				min-height: 195px;
+				padding: 16px 17px 16px 10px;
+			}
+				.contents .client-section .to-do .todo-context p {
+					font-family: Arial, Helvetica, sans-serif;
+					font-size: 10.44px;
+					line-height: 12px;
+					color: #595959;
+					margin-bottom: 13px;
+				}
+		.contents .client-section .btn-area {
+			margin-right: -6px;
+		}
+
+
+	/* .save-section */
+	.contents .save-section .preview-area {
+		min-height: 36px;
+		background-color: #e6e7e8;
+		margin-left: -14px;
+		margin-right: -15px;
+	}
+		.contents .save-section .preview-area .left-link {
+			font-family: "segoeui", Arial;
+			font-size: 12.53px;
+			line-height: 36px;
+			color: #454545;
+			margin-left: 14px;
+			text-decoration: none;
+		}
+		.contents .save-section .preview-area .icon-preview {
+			display: inline-block;
+			width: 14px;
+			height: 14px;
+			border: 1px solid #454545;
+			border-radius: 50%;
+			margin-right: 3px;
+			vertical-align: middle;
+			margin-top: -1px;
+		}
+		.contents .save-section .preview-area .icon-preview .icons {
+			width: 16px;
+			height: 16px;
+			background-position: -208px 0;
+			position: absolute;
+			margin-top: -1px;
+			margin-left: -1px;
+		}
+	.contents .save-section .info-area {
+		font-size: 12.53px;
+		color: #454545;
+		padding-top: 27px;
+		padding-left: 3px;
+	}
+	.contents .save-section .info-area p {
+		line-height: 15px;
+	}
+		.contents .save-section .info-area .check-info {
+			font-size: 10.19px;
+			margin-top: 2px;
+			margin-bottom: 16px;
+		}
+		.contents .save-section .info-area .exec {
+			font-size: 10.44px;
+		}
+			.contents .save-section .info-area .check-info li {
+				float: left;
+				margin-right: 10px;
+			}
+		.contents .save-section .info-area .check-info .circle {
+			width: 17px;
+			height: 17px;
+			display: inline-block;
+			border-radius: 50%;
+			vertical-align: middle;
+		}
+			.contents .save-section .info-area .check-info .circle .icons {
+				width: 16px;
+				height: 16px;
+			}
+		.contents .save-section .info-area .check-info .circle.circle-facebook {
+			background-color: #3b5998;
+		}
+			.contents .save-section .info-area .check-info .circle.circle-facebook .icons {
+				background-position: -32px -16px;
+			}
+		.contents .save-section .info-area .check-info .circle.circle-twitter {
+			background-color: #27aae1;
+		}
+			.contents .save-section .info-area .check-info .circle.circle-twitter .icons {
+				background-position: -48px -16px;
+			}
+		.contents .save-section .info-area .check-info .circle.circle-youtube {
+			background-color: #CF2121;
+		}
+			.contents .save-section .info-area .check-info .circle.circle-youtube .icons {
+				background-position: -81px -32px;
+			}
+		.contents .save-section .info-area .check-info .circle.circle-linkedin {
+			background-color: #3b5998;
+		}
+			.contents .save-section .info-area .check-info .circle.circle-linkedin .icons {
+				background-position: -48px -32px;
+			}
+		.contents .save-section .info-area img {
+			width: 103px;
+			height: 33px;
+			margin-top: 11px;
+		}
+		.contents .save-section .save-area {
+			margin: 51px 10px 18px 11px;
+			min-height: 258px;
+		}
+			.contents .save-section .save-area .btn-signature {
+				font-family: "segoeui", Arial;
+				height: 27px;
+				background-color: #484848;
+				color: #fff;
+				font-size: 12.16px;
+				line-height: 27px;
+				text-decoration: none;
+				text-align: center;
+				display: block;
+			}
+			.contents .save-section .save-area .btn-signature.hide {
+				display: none;
+			}
+		.contents .save-section .btn-area {
+			margin-right: -7px;
+		}
+		
+		
+	/* .btn-area */
+	.contents .btn-area {
+		min-height: 30px;
+		padding-bottom: 35px;
+	}
+		.contents .btn-area .btn-lefts {
+			float: left;
+		}
+		.contents .btn-area .btn-rights {
+			float: right;
+		}
+			.contents .btn-area .btn-rights .btn {
+				float: left;
+				margin-left: 8px;
+			}
+.hidden {
+    display:none
+}

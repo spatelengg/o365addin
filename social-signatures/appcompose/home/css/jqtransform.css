@@ -1,0 +1,221 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+
+/* -------------
+ * Radios
+ * ------------- */
+span.jqTransformRadioWrapper {
+  display:block;
+  float: left;
+  vertical-align: middle;
+  margin: 2px 0 0 0;
+}
+a.jqTransformRadio {
+  height: 16px;
+  width: 16px;
+  display:block;
+  vertical-align: middle;
+  background: url(../i/icon-sprites.png) no-repeat;
+  background-position: -64px -16px;
+}
+.form-radios .form-container label {
+  padding-left: 8px;
+}
+.jqTransformRadioWrapper a.jqTransformChecked { 
+  background-position: -64px -32px;
+}
+
+
+
+/* -------------
+ * Checkboxes
+ * ------------- */
+span.jqTransformCheckboxWrapper{
+  display:block;
+  float:left;
+  height: 16px;
+  width: 16px;
+  padding: 3px 2px;
+  margin-right: 5px;
+}
+a.jqTransformCheckbox {
+  vertical-align: middle;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #b1b1b1;
+  display:block;/*display: -moz-inline-block;*/
+}
+.form-container:hover span.jqTransformCheckboxWrapper {
+}
+
+
+
+/* -------------
+ * Checked - Used for both Radio and Checkbox
+ * ------------- */
+a.jqTransformChecked {
+  background: url(../i/icon-sprites.png) no-repeat;
+  background-position: -146px -1px;
+}
+.form-container label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10.42px;
+  color: #595959;
+  font-weight: normal;
+  line-height: 15px;
+  display: inline-block;
+}
+
+
+
+
+/* -------------
+ * Selects
+ * ------------- */
+.selects-container {
+  font-size: 16px;
+  color: #2784e4;
+  margin: 0;
+}
+.selects-container .jqTransformSelectWrapper {
+  background: #fff;
+  position: relative;
+  height: 36px;
+  border: 1px solid #2784e4;
+  border-radius: 3px;
+  z-index: 999;
+}
+.selects-container .jqTransformSelectWrapper a.jqTransformSelectOpen {
+  background: url(../i/icon-sprites.png) no-repeat;
+  background-position: 0 0;
+  display: block;
+  position: absolute;
+  top: 7px;
+  right: 13px;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  z-index: 99;
+}
+.selects-container .jqTransformSelectWrapper div span {
+  float: none;
+  position: absolute;
+  white-space: nowrap;
+  text-indent: 15px;
+  height: 36px;
+  line-height: 36px;
+  overflow: hidden;
+  cursor: pointer;
+  margin:0;
+}
+.selects-container .jqTransformSelectWrapper ul {
+  text-align:center;
+  position: absolute;
+  top: 33px;
+  left: -1px;
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid #2784e4;
+  border-radius: 3px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  display: none;
+  margin: 0;
+  padding: 5px 0;
+  overflow: auto;
+  overflow-y: auto;
+  z-index: 1000;
+}
+.selects-container .jqTransformSelectWrapper ul li {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+.selects-container .jqTransformSelectWrapper ul a {
+  font-size: 16px;
+  color:#000;
+  text-indent: 15px;
+  display: block;
+  text-decoration: none;
+  line-height: 21px;
+  padding: 0 0 2px 0;
+}
+.selects-container .jqTransformSelectWrapper ul a.selected {
+  color: #999;
+}
+.selects-container .jqTransformSelectWrapper ul a:hover,
+.selects-container .jqTransformSelectWrapper ul a.selected:hover {
+  color: #2784e4;
+  text-decoration: none;
+}
+
+
+
+/* -------------
+ * Hidden - used to hide the original form elements
+ * ------------- */
+.jqTransformHidden {
+  display: none;
+}
+
+
+
+/* .module-social checkbox */
+.module-social span.jqTransformCheckboxWrapper{
+  margin-top: 1px;
+}
+
+
+
+/* -------------
+ * Checked - Used for both Radio and Checkbox
+ * ------------- */
+.module-social .form-container label {
+  font-size: 10.43px;
+  color: #4d4b4b;
+}
+.module-social .form-container label .icons {
+  width: 16px;
+  height: 16px;
+}
+.module-social .form-container label span {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  margin-right: 3px;
+  vertical-align: middle;
+}
+.module-social .form-container label span.icon-facebook {
+  background-color: #3b5998;
+}
+.module-social .form-container .icon-facebook .icons {
+  background-position: -80px 0;
+  margin-left: 2px;
+  margin-top: 3px;
+}
+.module-social .form-container label span.icon-twitter {
+  background-color: #27aae1;
+}
+.module-social .form-container .icon-twitter .icons {
+  background-position: -96px 0;
+  margin-left: 3px;
+  margin-top: 3px;
+}
+.module-social .form-container label span.icon-youtube {
+  background-color: #CF2121;
+  }    
+.module-social .form-container .icon-youtube .icons {
+  background-position: -228px 0;
+  margin-left: 3px;
+  margin-top: 3px;
+}
+.module-social .form-container label span.icon-linkedin {
+  background-color: #3b5998;
+}
+.module-social .form-container .icon-linkedin .icons {
+  background-position: -128px 0;
+  margin-left: 2px;
+  margin-top: 3px;
+}
