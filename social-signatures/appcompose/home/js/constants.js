@@ -15,7 +15,7 @@ var Constants = {
      
     "SELECT_LANGUAGE_PLACEHOLDER": "Default Languange",
 
-    "IMAGE_PATH": "https://localhost/social-signatures/appcompose/home",
+    "IMAGE_PATH": "https://o365addin.herokuapp.com/appcompose/home",
     "OUTLOOK_ROAMING_KEY": "signature_data",
     "ERROR_ADD_IN": "There has been some error while processing request:"
 };

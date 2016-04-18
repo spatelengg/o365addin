@@ -20,10 +20,10 @@
     <Form xsi:type="ItemEdit">
       <DesktopSettings>
         <!--for local development-->
-         <SourceLocation DefaultValue="https://localhost/social-signatures/appcompose/home/base.html"/>
+         <!--<SourceLocation DefaultValue="https://localhost/social-signatures/appcompose/home/base.html"/>-->
 
         <!-- app engine link -->
-        <!--<SourceLocation DefaultValue="https://officeadd-in.herokuapp.com/appcompose/home/base.html"/>-->
+        <SourceLocation DefaultValue="https://o365addin.herokuapp.com/appcompose/home/base.html"/>
       </DesktopSettings>
     </Form>
   </FormSettings>
